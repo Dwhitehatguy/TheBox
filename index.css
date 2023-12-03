@@ -1,0 +1,357 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+@font-face{
+  font-family: Work Sans;
+  src: url("/Typefaces/Lato,Work_Sans/Work_Sans/WorkSans-VariableFont_wght.ttf");
+  format: truetype; 
+}
+
+
+body{
+  width: 1400px;
+  font-family: Work Sans;
+}
+
+section{
+  padding: 112px;
+  /* padding-left: 112px;
+  padding-right: 112px; */
+
+}
+
+button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 0;
+  border-radius: 2px;
+}
+
+ul{
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  
+}
+
+h4{
+  font-size: 36px;
+}
+
+
+
+
+.ads {
+  
+  background-image: url('assets/unsplash_MP0bgaS_d1c.jpg');
+  background-size: 100% 100%;
+
+}
+
+body > header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 112px 23px ;
+  padding-top: 22px;
+  padding-bottom: 23px;
+  
+}
+
+#top li {
+  display: inline;
+  margin-left: 0px;
+  &:not(li:nth-child(1)){
+    margin-left: 50px;
+  }
+}
+
+.hero{
+  background-image: url('assets/NEWHERO.jpg');
+  height: 646px;
+  background-size: 100% 100%;
+  padding-right: 0;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero h1{
+  width: 556px;
+  height: 168px;
+  font-size: 72px;
+  padding: 239px 0;
+  text-decoration: none;
+}
+
+.feature{
+  width: 396px;
+  height: 192px;
+  background-color: #3559C7;
+  color: white;
+  padding-top: 20px;
+  position: absolute;
+  top: 65.4%;
+  left: 71.5%;
+}
+
+.feature h4,
+.feature p {
+  text-align: center;
+  font-size: 20px;
+} 
+
+.feature p{
+  margin-top: 20px;
+  margin-bottom: 26px;
+  font-size: 24px;
+}
+
+.feature .button{
+  display: flex;
+  
+}
+
+.button button{
+  color: white;
+  flex-grow: 1;
+  background-color: black;
+  border: 0;
+
+  > a span{
+    text-align: justify;
+    font-weight: 900;
+  }
+  
+}
+
+.button .back{
+  padding: 9.5px 0;
+  border-right: 1px solid white;
+  > a span{
+    margin-right: 10px;
+  }
+}
+
+.button .next{
+  border-left: 1px solid white;
+  > a span{
+    margin-left: 10px;
+  }
+}
+
+.button button a{
+  color: white;
+  text-decoration: none;
+}
+
+.reasons {
+  padding: 0 216px;
+  padding-top: 60px;
+  padding-bottom: 84px;
+}
+
+.reasons h4 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reasons article{
+  padding-left: 20px;
+  padding-right: 18px;
+  border: 1px dashed #dad7d7;
+  border-radius: 6px;
+  > p {
+    color: #918888;
+  }
+
+  > h2{
+    color: #2e2d2d;
+  }
+}
+
+.reasons div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reasons div article {
+  width: 292px;
+}
+
+.reasons div article svg {
+  margin: 20px 0 0 20px;
+}
+
+.reasons div article h2 {
+  margin: 18px 0;
+}
+
+.reasons div article p {
+  padding-bottom: 40px;
+}
+
+.about_us{
+  position: relative;
+  padding: 0 0 0 112px;
+
+  > img{
+    margin-top: 74px;
+  }
+}
+
+.about_us aside {
+  position: absolute;
+  top: -42px;
+  left: 824px;
+  width: 488px;
+  padding-left: 40px;
+  background-color: #3559C7;
+  color: white;
+  padding-bottom: 60px;
+  border-radius: 2px;
+  > h4{
+    font-size: 36px;
+    padding: 50px 0 37PX 0;
+  }
+
+  >p{
+    font-size: 20px;
+    width: 388px;
+  }
+
+  > p:nth-of-type(2){
+    margin-bottom: 74px;
+  }
+
+  > p:nth-child(2){
+    margin-bottom: 1lh;
+  }
+  
+}
+
+.about_us aside button {
+  width: 219px;
+  font-size: 18px;
+  font-weight:bold;
+  background-color: white;
+  color: #3559C7;
+  border: 0;
+}
+
+.justbox {
+  margin-left: 388px;
+  margin-top: -90px;
+  position: relative;
+  z-index: 10;
+  width: 900px;
+  height: 323px;
+  background-color: #3559C7;
+}
+
+.services {
+  padding: 0 216px;
+  >h4{
+    padding: 44px;
+    padding: 36px;
+    text-align: center;
+  }
+}
+
+.service-col{
+  padding-bottom: 76px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between;
+  align-content: space-between; */
+  column-gap: 75px;
+  row-gap: 75px;
+}
+
+.service-col div{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 271px;
+  background-color: white;
+  color: #3559C7;
+}
+
+
+.service-col .blue{
+  background-color: #3559C7;
+  color: white;
+  > div{
+    background-color: #3559C7;
+    color: white;
+
+  }
+}
+
+
+.service-col div svg{
+  margin: 42px 10px 24px 10px;
+}
+
+.service-col div div{
+  width: 56px;
+  border-bottom:1px dashed grey;
+  background-color: white;
+}
+
+.service-col div span{
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-bottom: 38px;
+
+}
