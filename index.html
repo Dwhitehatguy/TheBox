@@ -20,11 +20,11 @@
 
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Projects</li>
-                <li>Services</li>
-                <li>Contact Us</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -227,7 +227,7 @@
             </article>
             
             <article>
-                <img src="assets/illus (3).png" alt="">
+                <img src="assets/illus (5).png" alt="">
                 <h1>30</h1>
                 <span>Years in Business</span>
             </article>
@@ -267,53 +267,65 @@
             
             <nav>
                 <ul>
-                    <li>All</li>
-                    <li>Commercial</li>
-                    <li>Residential</li>
-                    <li>Others</li>
+                    <li><a>All</a></li>
+                    <li><a>Commercial</a></li>
+                    <li><a>Residential</a></li>
+                    <li><a>Others</a></li>
                 </ul>
             </nav>
         </header>
 
         
         <div>
-            <article>
-                <img src="" alt="">
-                <h5>Wildstone Infra Hotel</h5>
-                <p>2715 Ash Dr. San Jose, South Dakota</p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h5>Wish Stone Building</h5>
-                <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h5>Mr. Parkinston&#39;s House</h5>
-                <p>3517 W. Gray St. Utica, Pennsylvania</p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h5>Oregano Height</h5>
-                <p>2464 Royal Ln. Mesa, New Jersey </p>
-            </article>
+            <div class="grid">
+                <article>
+                    <img src="assets\hotel.jpg" alt="">
+                    <h5>Wildstone Infra Hotel</h5>
+                    <p>2715 Ash Dr. San Jose, South Dakota</p>
+                </article>
+                <article>
+                    <img src="assets\building.jpg" alt="">
+                    <h5>Wish Stone Building</h5>
+                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+                </article>
+                <article>
+                    <img src="assets\mr.jpg" alt="">
+                    <h5>Mr. Parkinston&#39;s House</h5>
+                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
+                </article>
+                <article>
+                    <img src="assets\oregon.jpg" alt="">
+                    <h5>Oregano Height</h5>
+                    <p>2464 Royal Ln. Mesa, New Jersey </p>
+                </article>
+                
+            </div>
             
             <div>
-                <button>
-                    <a href="#">
+                <div class="button containing-circles">
+                    <button class="back">
+                        <a href="#">
                         
-                        <img src="assets\arrow-left.png" alt="">
+                            <span>&#10229;</span>Back
+                        </a>
+                    </button>
                     
-                        Back
-                    </a>
-                </button>
-                
-                
-                <button>
-                    <a href="#"><img src="assets\arrow-right.png" alt="">Next</a>
-                </button>
+                    <div class="circles">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    
+                    <button class="next">
+                        <a href="#">Next <span>&#10230;</span></a>
+                    </button>
+                </div>
             </div>
         </div>
+
+        
     </section>
 
     <section class="cta">
@@ -322,48 +334,59 @@
 
         
         <form action="">
-            <fieldset class=".field">
+            <fieldset id="field">
                 <input type="text" placeholder="Your Name &#42;" >
                 
-                <input type="text" placeholder="Email#42;"/>
+                <input type="text" placeholder="Email&#42;;"/>
                 
-                <input type="text" placeholder="Reason for Contacting*&#42;"/>
+                <input type="text" placeholder="Reason for Contacting&#42;"/>
                 
                 <input type="text" placeholder="Phone&#42;"/>
                 
-                <textarea id="message" type="text" placeholder="message"></textarea>
-                <label for="message">
-
-                    <span style="color:red;">&#42;</span>
-                     indicates a required field
-                    
-                </label>
-                
-
-                <button>
-                    submit
-                </button>
+                <div>
+                    <textarea id="message" placeholder="Message" rows="5" cols="64"></textarea>
+                    <label for="message">
+                        <span style="color:red;">&#42;</span>indicates a required field
+                        
+                    </label>
+                </div>
+            
             </fieldset>
         </form>
+        <button>
+            submit
+        </button>
     </section>
 
     <footer>
         <section>
             <div class="left">
-                <address>ADDRESS</address>
-                <p>6391 Elgin St. Celina, Delaware 10299</p>
-                <address>PHONE</address>
-                <p>+84 1102 2703</p>
-                <address>EMAIL</address>
-                <p>hello@thebox.com</p>
+                <div>
+                    <address>ADDRESS:</address>
+                    <p> 6391 Elgin St. Celina, Delaware 10299</p>
+                </div>
+                
+                <div>
+                    <address>PHONE:</address>
+                    <p><strong>+84 1102 2703</strong></p>
+                </div>
+                
+                <div>
+                    <address>EMAIL:</address>
+                    <p>hello@thebox.com</p>
+                </div>
+                
             </div>
 
             <div class="right">
-                <label for="">NEWSLETTER</label>
-                <input type="email" placeholder="Your email here">
-                <button>
-                    Suscribe
-                </button>
+                <label for="">NEWSLETTER:</label>
+                <div class="making-inline">
+                    <input type="email" placeholder="Your email here">
+                    <button>
+                        Suscribe
+                    </button>
+                </div>
+                
             </div>
 
             <div>
@@ -389,8 +412,8 @@
         </section>
 
         <div class="bottom">
-            <span>social:</span>
-            <p></p>
+            
+            <p>TheBox Company &copy 2022. All Rights Reserved</p>
         </div>
     </footer>
     
